@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{496BDB58-C611-44AE-B1AB-0AFBE00A985E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMC_S2_CHT</RootNamespace>
+    <AssemblyName>KMC_S2_CHT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VISION60.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ATMC.Controls">
+      <HintPath>C:\ATM\ATMC.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Blob, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CalibFix, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CalibFix.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Caliper, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Caliper.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Core, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Display.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageFile, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageProcessing, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.PMAlign, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.PMAlign.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ToolGroup, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ToolGroup.Controls, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D.Core, Version=51.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="LotusAPI">
+      <HintPath>..\..\..\..\..\LotusAPI\bin\LotusAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LotusAPI.Robotics">
+      <HintPath>..\..\..\..\..\LotusAPI\bin\LotusAPI.Robotics.dll</HintPath>
+    </Reference>
+    <Reference Include="LotusAPI.Utils">
+      <HintPath>..\..\..\..\..\LotusAPI\bin\LotusAPI.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFrmLight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFrmLight.designer.cs">
+      <DependentUpon>AFrmLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AFrmOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFrmOffset.designer.cs">
+      <DependentUpon>AFrmOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AFrmStereoFixtureSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFrmStereoFixtureSet.designer.cs">
+      <DependentUpon>AFrmStereoFixtureSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AIniSet.cs" />
+    <Compile Include="ASDef.cs" />
+    <Compile Include="ATbPMAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATbPMAlign.designer.cs">
+      <DependentUpon>ATbPMAlign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrm3D_1_Set.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrm3D_1_Set.Designer.cs">
+      <DependentUpon>AFrm3D_1_Set.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCalibSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCalibSet.designer.cs">
+      <DependentUpon>AFrmCalibSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCamera.Designer.cs">
+      <DependentUpon>AFrmCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCameraSet_Cog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCameraSet_Cog.designer.cs">
+      <DependentUpon>AFrmCameraSet_Cog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogAcqFifo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogAcqFifo.designer.cs">
+      <DependentUpon>AFrmCogAcqFifo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogCalibCheckerboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogCalibCheckerboard.designer.cs">
+      <DependentUpon>AFrmCogCalibCheckerboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogCalibNPointToNPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogCalibNPointToNPoint.designer.cs">
+      <DependentUpon>AFrmCogCalibNPointToNPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogModelMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogModelMaker.designer.cs">
+      <DependentUpon>AFrmCogModelMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmOnlineCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmOnlineCamera.Designer.cs">
+      <DependentUpon>AFrmOnlineCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmPMAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmPMAlign.designer.cs">
+      <DependentUpon>AFrmPMAlign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmStereoSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmStereoSet.Designer.cs">
+      <DependentUpon>AFrmStereoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmTypeReload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmTypeReload.Designer.cs">
+      <DependentUpon>AFrmTypeReload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATbCallibCheckerboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATbCallibCheckerboard.designer.cs">
+      <DependentUpon>ATbCallibCheckerboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATbCallibNPointToPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATbCallibNPointToPoint.designer.cs">
+      <DependentUpon>ATbCallibNPointToPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATbEdtFindCorner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATbEdtFindCorner.Designer.cs">
+      <DependentUpon>ATbEdtFindCorner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATbEdtFindEllipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATbEdtFindEllipse.Designer.cs">
+      <DependentUpon>ATbEdtFindEllipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATbEdtFixtureNPointToNPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATbEdtFixtureNPointToNPoint.Designer.cs">
+      <DependentUpon>ATbEdtFixtureNPointToNPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFrameSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFrameSet.designer.cs">
+      <DependentUpon>FrmFrameSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoleLocationSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoleLocationSet.Designer.cs">
+      <DependentUpon>FrmHoleLocationSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogMask.designer.cs">
+      <DependentUpon>AFrmCogMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogPMAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogPMAlign.designer.cs">
+      <DependentUpon>AFrmCogPMAlign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmCogToolGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmCogToolGroup.designer.cs">
+      <DependentUpon>AFrmCogToolGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmFileDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmFileDel.designer.cs">
+      <DependentUpon>AFrmFileDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmLimit.designer.cs">
+      <DependentUpon>AFrmLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmPlcMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmPlcMap.designer.cs">
+      <DependentUpon>AFrmPlcMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmPW.designer.cs">
+      <DependentUpon>AFrmPW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AFrmTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AFrmTypeSet.designer.cs">
+      <DependentUpon>AFrmTypeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPartOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPartOffset.Designer.cs">
+      <DependentUpon>FrmPartOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\AAcqFifo.cs" />
+    <Compile Include="Source\ACalibrationLotus3D.cs" />
+    <Compile Include="Source\AClientSocketPlcSiemens.cs" />
+    <Compile Include="Source\ACommLightControl.cs" />
+    <Compile Include="Source\AFixtureNPointToNPoint.cs" />
+    <Compile Include="Source\AIniVisionTools.cs" />
+    <Compile Include="Source\AThrdClientSocketPlcSiemens.cs" />
+    <Compile Include="Source\AThrdLogWriter.cs" />
+    <Compile Include="Source\AThrdUdpServerSocketRbtHHI.cs" />
+    <Compile Include="Source\AUdpServerSocket.cs" />
+    <Compile Include="Source\AUdpServerSocketRbtHHI.cs" />
+    <Compile Include="Source\ExceptionLogger.cs" />
+    <Compile Include="Source\TextFileLogger.cs" />
+    <EmbeddedResource Include="AFrmLight.resx">
+      <DependentUpon>AFrmLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFrmOffset.resx">
+      <DependentUpon>AFrmOffset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFrmStereoFixtureSet.resx">
+      <DependentUpon>AFrmStereoFixtureSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATbPMAlign.resx">
+      <DependentUpon>ATbPMAlign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrm3D_1_Set.resx">
+      <DependentUpon>AFrm3D_1_Set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCalibSet.resx">
+      <DependentUpon>AFrmCalibSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCamera.resx">
+      <DependentUpon>AFrmCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCameraSet_Cog.resx">
+      <DependentUpon>AFrmCameraSet_Cog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogAcqFifo.resx">
+      <DependentUpon>AFrmCogAcqFifo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogCalibCheckerboard.resx">
+      <DependentUpon>AFrmCogCalibCheckerboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogCalibNPointToNPoint.resx">
+      <DependentUpon>AFrmCogCalibNPointToNPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogMask.resx">
+      <DependentUpon>AFrmCogMask.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogModelMaker.resx">
+      <DependentUpon>AFrmCogModelMaker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogPMAlign.resx">
+      <DependentUpon>AFrmCogPMAlign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmCogToolGroup.resx">
+      <DependentUpon>AFrmCogToolGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmFileDel.resx">
+      <DependentUpon>AFrmFileDel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmLimit.resx">
+      <DependentUpon>AFrmLimit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmOnlineCamera.resx">
+      <DependentUpon>AFrmOnlineCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmPlcMap.resx">
+      <DependentUpon>AFrmPlcMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmPMAlign.resx">
+      <DependentUpon>AFrmPMAlign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmPW.resx">
+      <DependentUpon>AFrmPW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmStereoSet.resx">
+      <DependentUpon>AFrmStereoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmTypeReload.resx">
+      <DependentUpon>AFrmTypeReload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AFrmTypeSet.resx">
+      <DependentUpon>AFrmTypeSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ATbCallibCheckerboard.resx">
+      <DependentUpon>ATbCallibCheckerboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ATbCallibNPointToPoint.resx">
+      <DependentUpon>ATbCallibNPointToPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ATbEdtFindCorner.resx">
+      <DependentUpon>ATbEdtFindCorner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ATbEdtFindEllipse.resx">
+      <DependentUpon>ATbEdtFindEllipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ATbEdtFixtureNPointToNPoint.resx">
+      <DependentUpon>ATbEdtFixtureNPointToNPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFrameSet.resx">
+      <DependentUpon>FrmFrameSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoleLocationSet.resx">
+      <DependentUpon>FrmHoleLocationSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPartOffset.resx">
+      <DependentUpon>FrmPartOffset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Source\ABlob.cs" />
+    <Compile Include="Source\ACalculation.cs" />
+    <Compile Include="Source\ACaliper.cs" />
+    <Compile Include="Source\ACallibCheckerboard.cs" />
+    <Compile Include="Source\ACallibNPointToNPoint.cs" />
+    <Compile Include="Source\ACapture.cs" />
+    <Compile Include="Source\AClientSocket.cs" />
+    <Compile Include="Source\AComm.cs" />
+    <Compile Include="Source\ADisplay.cs" />
+    <Compile Include="Source\AFile.cs" />
+    <Compile Include="Source\AFindCorner.cs" />
+    <Compile Include="Source\AFindEllipse.cs" />
+    <Compile Include="Source\AHistogram.cs" />
+    <Compile Include="Source\APMAlign.cs" />
+    <Compile Include="Source\APMAligns.cs" />
+    <Compile Include="Source\APoint.cs" />
+    <Compile Include="Source\AType.cs" />
+    <Compile Include="Source\AUtil.cs" />
+    <Compile Include="Source\AVisionProBuild.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\기아 design.bmp" />
+    <Content Include="VISION60.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
